@@ -1,0 +1,44 @@
+---
+title: "Homophily in Covid Tweets"
+author: "Claire Wilson"
+date: "9/12/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(dplyr)
+library(purrr)
+library(magrittr)
+library(ggplot2)
+library(readr)
+library(stringr)
+library(R.utils)
+```
+
+## Process Data
+
+```{r read_in_data, warning=FALSE}
+covid.df <- read_csv("covidtweets.csv")
+unfiltered.df <- read_csv("unfilteredtweets.csv")
+
+head(covid.df)
+```
+
+Strategy to identify male and female twitter users, using simple string matching to identify gender. If the string is not found to have a match within the SSN data, this method categorizes the gender as "other" 
+```{r guess_genders}
+
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
